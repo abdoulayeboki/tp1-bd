@@ -155,6 +155,7 @@ if(isset($_POST['prenom']) &&
   <div class="t2">
         <table>
         <thead>
+        <th>action</th>
                 <th>matricule</th>
                 <th>prenom</th>
                 <th>nom</th>
@@ -162,7 +163,7 @@ if(isset($_POST['prenom']) &&
                 <th>telephon</th>
                 <th>Date de naissance</th>
                 <th>Email</th>
-                <th>action</th>
+               
        
             </thead>
             <tbody>
@@ -171,6 +172,9 @@ if(isset($_POST['prenom']) &&
                 foreach( $employers as $ligne){ ?>
 
                  <tr>
+                 <td><a href="editer.php?cle='<?php echo   $ligne['matricule'] ?>'"><i class="fas fa-pencil-alt"></i></a>
+                  <a href="valider.php?cle=<?php echo  $ligne['matricule'] ?>"><i class="fas fa-trash"></i></a></td> 
+     
                  <td><?php echo $ligne['matricule'] ?></td>
                   <td><?php echo $ligne['prenom'] ?></td>
                   <td><?php echo $ligne['nom'] ?></td>
@@ -178,9 +182,7 @@ if(isset($_POST['prenom']) &&
                   <td><?php echo $ligne['tel'] ?></td>
                   <td><?php echo $ligne['date'] ?></td>
                   <td><?php echo $ligne['email'] ?></td>
-                  <td><a href="editer.php?cle='<?php echo   $ligne['matricule'] ?>'"><i class="fas fa-pencil-alt"></i></a>
-                  <a href="valider.php?cle=<?php echo  $ligne['matricule'] ?>"><i class="fas fa-trash"></i></a></td> 
-                 </tr>
+                              </tr>
                  
                  </tr>
                  <?php   } ?>
@@ -188,6 +190,6 @@ if(isset($_POST['prenom']) &&
         </table></div>
     
      </div>
-     <footer>Copyright Abdoulaye sarr septembre 2019</footer>
+     <!-- <footer>Copyright Abdoulaye sarr septembre 2019</footer> -->
 </body>
 </html> 

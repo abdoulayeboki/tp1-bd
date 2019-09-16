@@ -4,53 +4,47 @@ body{
 
  .page{
   margin-top: 1%;
-     width: 100%;
+     width: 110%;
      margin-bottom: 2%;
  }
  header{
     background: darkcyan;
     text-align: center;
     font-size: 2em;
+    width: 120%;
 }
 footer{
     background: darkcyan;
     text-align: center;
     height: 100px;
-    font-size: 2.5em;
+    font-size: 2.5em; 
+    width: 120%;
 }
 .edit{
     color: brown;
 }
- form   input[type="text"]{
-     width: 60%;
-     margin-bottom:25px;
-     font-size:1em;
- }
+  form   input[type="text"]{
+     margin-bottom: 1em;
+     font-size:1.2em; 
+ } 
  .tabdynamique{
      color: darkblue;
  }
-  .t1 a,.image a{
+  .t1 a{
      text-decoration: none;
      color: white;
 
  }
- .image{
-    /* display: inline-block;
-    width: 45%; */
-    float: right;
-    margin-right: 10%;
-    margin-top: 10%;
-}
- .image img{
-border-radius: 15px;
-box-shadow: 4px 4px 2px 2px #6495ed;
-} 
+ 
+ 
 .form{
-   /* display: inline-block;
-   width:50%; */
+   /* display: inline-block;*/
+   /* width:40%;  */
    float: left;
-   margin-left: 5%;
+   margin-left: 2%;
+   margin-right: 2%;
 }
+
   button{
     background: darkblue;
     height: 38px;
@@ -70,53 +64,16 @@ box-shadow: 4px 4px 2px 2px #6495ed;
     }
      .t2 td {
     border: thin solid #6495ed;
-     height: 35px; 
-    /*width: 60%; */
+     height: 2em; 
+    /* width: 60%; */
     
     }
     caption{
         color: #6495ff;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: bolde;
     }
- /* form   td{
-    width: 20%;
-    margin:auto;
-    font-size:1.2em;
-   
-} */
+
 .erreur{
     color: darkred;
 }
-
-/* form table   tr{
-   margin:15px;  
-} */
- /*
- form   select {
-    width: 40%;
-    /* height: 20%; */
-    /* margin-bottom:25px;
-    font-size:1.5em;
-   
-}
- form p{
-color: #ff4f4f;
-font-size: 1.6em;
- }
- form   button{
-    width: 20%;
-    height: 45px;
-    border:none;
-    border-radius:5px; 
-    font-weight: 500;
-    margin-bottom:25px;
-    font-size:1.5em;
-    background:#ff4f4f;
-}
-
- form   label{
-    margin-right:2%;
-    font-size:1.5em;
-   
-} */ 
